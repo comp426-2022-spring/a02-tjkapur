@@ -39,7 +39,7 @@ export function coinFlip() {
 
 export function coinFlips(flips) {
   let returnArray = String[flips];
-  for (i = 0; i < flips; i++) {
+  for (var i = 0; i < flips; i++) {
     returnArray[i] = coinFlip();
   }
   return returnArray;
@@ -62,7 +62,7 @@ export function countFlips(array) {
   var headCounter = 0;
   var tailCounter = 0;
   
-  for (i =0; i < array.length; i++) {
+  for (var i =0; i < array.length; i++) {
     if (array[i] == "heads") {
       headCounter++;
     }
