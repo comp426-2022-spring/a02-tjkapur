@@ -38,7 +38,7 @@ export function coinFlip() {
  */
 
 export function coinFlips(flips) {
-  let returnArray = String[flips];
+  let returnArray = [];
   for (var i = 0; i < flips; i++) {
     returnArray[i] = coinFlip();
   }
